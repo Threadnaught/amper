@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name amper)(type KiCad)(uri /home/idk/git/amper/kicad/lib/amper.pretty)(options "")(descr ""))
+)

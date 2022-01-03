@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name amper-symbols)(type Legacy)(uri /home/idk/git/amper/kicad/lib/symbols.lib)(options "")(descr ""))
+)
