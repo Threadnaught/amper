@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="concept.svg"
+   inkscape:version="1.1.1 (eb90963e84, 2021-10-02)"
+   inkscape:export-filename="/home/idk/git/amper/concept.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#219d2d"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.4571534"
+     inkscape:cx="190.4398"
+     inkscape:cy="160.24394"
+     inkscape:window-width="1368"
+     inkscape:window-height="836"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g7458"
+       transform="translate(27.000001)">
+      <g
+         id="g5481">
+        <rect
+           style="fill:#383838;fill-opacity:1;stroke:none;stroke-width:1.58113;stroke-linecap:round"
+           id="rect1028"
+           width="20"
+           height="16"
+           x="40"
+           y="80" />
+        <polygon
+           id="a"
+           points="1,1 2,0 8,0 9,1 8,2 2,2 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="b"
+           points="9,1 10,2 10,8 9,9 8,8 8,2 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="c"
+           points="9,9 10,10 10,16 9,17 8,16 8,10 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="d"
+           points="9,17 8,18 2,18 1,17 2,16 8,16 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="e"
+           points="1,17 0,16 0,10 1,9 2,10 2,16 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="f"
+           points="1,9 0,8 0,2 1,1 2,2 2,8 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="g"
+           points="1,9 2,8 8,8 9,9 8,10 2,10 "
+           fill="#ff0000"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon1374"
+           points="2,0 8,0 9,1 8,2 2,2 1,1 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon1376"
+           points="10,2 10,8 9,9 8,8 8,2 9,1 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon1378"
+           points="10,10 10,16 9,17 8,16 8,10 9,9 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon1380"
+           points="8,18 2,18 1,17 2,16 8,16 9,17 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon1382"
+           points="0,16 0,10 1,9 2,10 2,16 1,17 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon1384"
+           points="0,8 0,2 1,1 2,2 2,8 1,9 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon1386"
+           points="2,8 8,8 9,9 8,10 2,10 1,9 "
+           fill="#ff0000"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:12.3472px;line-height:1.25;font-family:met;-inkscape-font-specification:met;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="61.169109"
+         y="95.752373"
+         id="text1913"><tspan
+           sodipodi:role="line"
+           id="tspan1911"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3472px;font-family:monospace;-inkscape-font-specification:monospace;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+           x="61.169109"
+           y="95.752373">v</tspan></text>
+      <g
+         id="g5493"
+         transform="translate(33,80)">
+        <rect
+           style="fill:#383838;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-linecap:round"
+           id="rect5221"
+           width="6"
+           height="6"
+           x="-3.5527137e-15"
+           y="0" />
+        <circle
+           style="fill:#878787;fill-opacity:1;stroke:none;stroke-width:2.69967;stroke-linecap:round"
+           id="path5358"
+           cx="3"
+           cy="3"
+           r="2.5" />
+      </g>
+      <g
+         id="g5499"
+         transform="translate(33,90)">
+        <rect
+           style="fill:#383838;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-linecap:round"
+           id="rect5495"
+           width="6"
+           height="6"
+           x="-3.5527137e-15"
+           y="0" />
+        <circle
+           style="fill:#878787;fill-opacity:1;stroke:none;stroke-width:2.69967;stroke-linecap:round"
+           id="circle5497"
+           cx="3"
+           cy="3"
+           r="2.5" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:8.81944px;line-height:1.25;font-family:met;-inkscape-font-specification:met;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="27.776991"
+         y="85.370659"
+         id="text5503"><tspan
+           sodipodi:role="line"
+           id="tspan5501"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.81944px;font-family:monospace;-inkscape-font-specification:monospace;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+           x="27.776991"
+           y="85.370659">↑</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.81944px;line-height:1.25;font-family:met;-inkscape-font-specification:met;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="27.776991"
+         y="95.370659"
+         id="text6883"><tspan
+           sodipodi:role="line"
+           id="tspan6881"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.81944px;font-family:monospace;-inkscape-font-specification:monospace;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+           x="27.776991"
+           y="95.370659">↓</tspan></text>
+    </g>
+    <rect
+       style="fill:#383838;fill-opacity:1;stroke:none;stroke-width:1.28379;stroke-linecap:round"
+       id="rect8515"
+       width="9"
+       height="15"
+       x="45.500004"
+       y="37.5" />
+    <rect
+       style="fill:#a2a2a2;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:round"
+       id="rect9263"
+       width="1.5"
+       height="3"
+       x="44.000004"
+       y="37.875008" />
+    <rect
+       style="fill:#a2a2a2;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:round"
+       id="rect9265"
+       width="1.5"
+       height="3"
+       x="44.000004"
+       y="41.625015" />
+    <rect
+       style="fill:#a2a2a2;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:round"
+       id="rect9267"
+       width="1.5"
+       height="3"
+       x="44.000004"
+       y="45.375" />
+    <ellipse
+       style="fill:#7b7b7b;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round"
+       id="path9291"
+       sodipodi:type="arc"
+       sodipodi:cx="50.000004"
+       sodipodi:cy="37.5"
+       sodipodi:rx="2.25"
+       sodipodi:ry="2.25"
+       sodipodi:start="0"
+       sodipodi:end="3.1415927"
+       sodipodi:arc-type="slice"
+       d="m 52.250004,37.5 a 2.25,2.25 0 0 1 -1.125,1.948557 2.25,2.25 0 0 1 -2.25,0 2.25,2.25 0 0 1 -1.125,-1.948557 h 2.25 z" />
+    <g
+       id="g9559"
+       transform="translate(-23.999999)">
+      <g
+         id="g9533">
+        <rect
+           style="fill:#383838;fill-opacity:1;stroke:none;stroke-width:1.58113;stroke-linecap:round"
+           id="rect9503"
+           width="20"
+           height="16"
+           x="40"
+           y="80" />
+        <polygon
+           id="polygon9505"
+           points="2,2 1,1 2,0 8,0 9,1 8,2 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9507"
+           points="8,2 9,1 10,2 10,8 9,9 8,8 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9509"
+           points="8,10 9,9 10,10 10,16 9,17 8,16 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9511"
+           points="8,16 9,17 8,18 2,18 1,17 2,16 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9513"
+           points="2,16 1,17 0,16 0,10 1,9 2,10 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9515"
+           points="2,8 1,9 0,8 0,2 1,1 2,2 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9517"
+           points="2,10 1,9 2,8 8,8 9,9 8,10 "
+           fill="#ff0000"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9519"
+           points="1,1 2,0 8,0 9,1 8,2 2,2 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9521"
+           points="9,1 10,2 10,8 9,9 8,8 8,2 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9523"
+           points="9,9 10,10 10,16 9,17 8,16 8,10 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9525"
+           points="9,17 8,18 2,18 1,17 2,16 8,16 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9527"
+           points="1,17 0,16 0,10 1,9 2,10 2,16 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9529"
+           points="1,9 0,8 0,2 1,1 2,2 2,8 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9531"
+           points="1,9 2,8 8,8 9,9 8,10 2,10 "
+           fill="#ff0000"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:12.3472px;line-height:1.25;font-family:met;-inkscape-font-specification:met;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="61.169109"
+         y="95.752373"
+         id="text9537"><tspan
+           sodipodi:role="line"
+           id="tspan9535"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3472px;font-family:monospace;-inkscape-font-specification:monospace;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+           x="61.169109"
+           y="95.752373">v</tspan></text>
+      <g
+         id="g9543"
+         transform="translate(33,80)">
+        <rect
+           style="fill:#383838;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-linecap:round"
+           id="rect9539"
+           width="6"
+           height="6"
+           x="-3.5527137e-15"
+           y="0" />
+        <circle
+           style="fill:#878787;fill-opacity:1;stroke:none;stroke-width:2.69967;stroke-linecap:round"
+           id="circle9541"
+           cx="3"
+           cy="3"
+           r="2.5" />
+      </g>
+      <g
+         id="g9549"
+         transform="translate(33,90)">
+        <rect
+           style="fill:#383838;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-linecap:round"
+           id="rect9545"
+           width="6"
+           height="6"
+           x="-3.5527137e-15"
+           y="0" />
+        <circle
+           style="fill:#878787;fill-opacity:1;stroke:none;stroke-width:2.69967;stroke-linecap:round"
+           id="circle9547"
+           cx="3"
+           cy="3"
+           r="2.5" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:8.81944px;line-height:1.25;font-family:met;-inkscape-font-specification:met;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="27.776991"
+         y="85.370659"
+         id="text9553"><tspan
+           sodipodi:role="line"
+           id="tspan9551"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.81944px;font-family:monospace;-inkscape-font-specification:monospace;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+           x="27.776991"
+           y="85.370659">↑</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.81944px;line-height:1.25;font-family:met;-inkscape-font-specification:met;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="27.776991"
+         y="95.370659"
+         id="text9557"><tspan
+           sodipodi:role="line"
+           id="tspan9555"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.81944px;font-family:monospace;-inkscape-font-specification:monospace;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+           x="27.776991"
+           y="95.370659">↓</tspan></text>
+    </g>
+    <g
+       id="g9617"
+       transform="translate(-3.9999302,-75)">
+      <g
+         id="g9591">
+        <rect
+           style="fill:#383838;fill-opacity:1;stroke:none;stroke-width:1.58113;stroke-linecap:round"
+           id="rect9561"
+           width="20"
+           height="16"
+           x="40"
+           y="80" />
+        <polygon
+           id="polygon9563"
+           points="9,1 8,2 2,2 1,1 2,0 8,0 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9565"
+           points="9,9 8,8 8,2 9,1 10,2 10,8 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9567"
+           points="9,17 8,16 8,10 9,9 10,10 10,16 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9569"
+           points="1,17 2,16 8,16 9,17 8,18 2,18 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9571"
+           points="1,9 2,10 2,16 1,17 0,16 0,10 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9573"
+           points="1,1 2,2 2,8 1,9 0,8 0,2 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9575"
+           points="9,9 8,10 2,10 1,9 2,8 8,8 "
+           fill="#ff0000"
+           transform="matrix(0.8,0,0,0.8,41,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9577"
+           points="8,2 2,2 1,1 2,0 8,0 9,1 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9579"
+           points="8,8 8,2 9,1 10,2 10,8 9,9 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9581"
+           points="8,16 8,10 9,9 10,10 10,16 9,17 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9583"
+           points="2,16 8,16 9,17 8,18 2,18 1,17 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9585"
+           points="2,10 2,16 1,17 0,16 0,10 1,9 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9587"
+           points="2,2 2,8 1,9 0,8 0,2 1,1 "
+           fill="#dddddd"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <polygon
+           id="polygon9589"
+           points="8,10 2,10 1,9 2,8 8,8 9,9 "
+           fill="#ff0000"
+           transform="matrix(0.8,0,0,0.8,51,81)"
+           style="fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:12.3472px;line-height:1.25;font-family:met;-inkscape-font-specification:met;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="61.169109"
+         y="95.752373"
+         id="text9595"><tspan
+           sodipodi:role="line"
+           id="tspan9593"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3472px;font-family:monospace;-inkscape-font-specification:monospace;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+           x="61.169109"
+           y="95.752373">v</tspan></text>
+    </g>
+    <g
+       id="g10128"
+       transform="translate(12)">
+      <rect
+         style="fill:#383838;fill-opacity:1;stroke:none;stroke-width:4.24264;stroke-linecap:round"
+         id="rect10097"
+         width="6"
+         height="3"
+         x="35"
+         y="70" />
+      <rect
+         style="fill:#7b7b7b;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round"
+         id="rect10015"
+         width="2"
+         height="2"
+         x="35.5"
+         y="70.5" />
+      <rect
+         style="fill:#7b7b7b;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round"
+         id="rect10123"
+         width="2"
+         height="2"
+         x="38.5"
+         y="70.5" />
+    </g>
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 47,71.5 H 25 V 80"
+       id="path10655"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 53,71.5 H 75 V 80"
+       id="path11077"
+       sodipodi:nodetypes="ccc" />
+    <rect
+       style="fill:#a2a2a2;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:round"
+       id="rect11089"
+       width="1.5"
+       height="3"
+       x="44.000004"
+       y="49.124992" />
+    <rect
+       style="fill:#a2a2a2;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:round"
+       id="rect11353"
+       width="1.5"
+       height="3"
+       x="54.5"
+       y="37.875008" />
+    <rect
+       style="fill:#a2a2a2;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:round"
+       id="rect11355"
+       width="1.5"
+       height="3"
+       x="54.5"
+       y="41.625015" />
+    <rect
+       style="fill:#a2a2a2;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:round"
+       id="rect11357"
+       width="1.5"
+       height="3"
+       x="54.5"
+       y="45.375" />
+    <rect
+       style="fill:#a2a2a2;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:round"
+       id="rect11359"
+       width="1.5"
+       height="3"
+       x="54.5"
+       y="49.124992" />
+    <g
+       id="g11464"
+       transform="translate(12,-6)">
+      <rect
+         style="fill:#383838;fill-opacity:1;stroke:none;stroke-width:4.24264;stroke-linecap:round"
+         id="rect11458"
+         width="9"
+         height="3"
+         x="35"
+         y="70" />
+      <rect
+         style="fill:#7b7b7b;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round"
+         id="rect11460"
+         width="2"
+         height="2"
+         x="35.5"
+         y="70.5" />
+      <rect
+         style="fill:#7b7b7b;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round"
+         id="rect11462"
+         width="2"
+         height="2"
+         x="38.5"
+         y="70.5" />
+      <rect
+         style="fill:#7b7b7b;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round"
+         id="rect14403"
+         width="2"
+         height="2"
+         x="41.5"
+         y="70.5" />
+      <path
+         style="fill:none;stroke:#fefefe;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 43.999997,49 h 3 l -2e-6,10e-7 V 67 H 47 l -4.5,-10e-7 V 67 70"
+         id="path14542"
+         sodipodi:nodetypes="cccccccc" />
+    </g>
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 44,47 h -3 v 10e-7 V 58 58 h 10.5 v 0 6"
+       id="path11499"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 44,43 h -6 v 10e-7 V 61 v -10e-7 H 48.5 V 61 64"
+       id="path11581"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       style="fill:none;stroke:#fefefe;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 46.000002,21.000001 v 5 h 10e-7 H 59 V 43"
+       id="path16857"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+</svg>

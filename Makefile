@@ -1,2 +1,5 @@
-kicad/lib/amper.pretty/iridyne_logo.kicad_mod: iridyne_logo.svg
-	svg2mod -i iridyne_logo.svg -o kicad/lib/amper.pretty/iridyne_logo.kicad_mod
+kicad/lib/amper.pretty/%.kicad_mod: inkscape/footprints/%.svg
+	cp $< $<.broken
+	inkscape --verb EditSelectAll --verb SelectionBreakApart --verb FileSave --verb FileQuit $<.broken
+	svg2mod -i $<.broken -o $@
+	#rm $<.broken
