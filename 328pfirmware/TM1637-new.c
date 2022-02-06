@@ -7,6 +7,8 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
+#include "./chars.h"
+
 #define LED_DATA	0x40
 #define LED_ADDRESS	0xC0
 #define LED_DISPLAY	0x80
@@ -22,9 +24,9 @@
 #define DIGITS 6
 
 //Set the pinmode of CLK and DIO
-//Output mode (1) has side effect of setting impeadance to GND and so able to drive pin LOW
-//Input mode (0) allows pin to be pulled up by external resistors
-inline void SetClkDioMode(unsigned char ClkMode, unsigned char DioMode){
+//Output mode (1) has side effect of reducing impedance to GND and so drives the pin LOW
+//Input mode (0) allows pin to be pulled HIGH by external resistors
+static inline void SetClkDioMode(unsigned char ClkMode, unsigned char DioMode){
 	if(ClkMode)
 		DDRD &= ~(1 << CLK);
 	else
@@ -64,12 +66,19 @@ void sendSegs(const unsigned char* segs){
 	txn({
 		sendByte(LED_ADDRESS);
 		for(unsigned char i = 0; i < DIGITS; i++){
-			sendByte(segs[(DIGITS-1) - i]);
+			sendByte(segs[i]);
 		}
 	});
 }
 
-unsigned char segments[] = { 0x00, 0x01, 0x02, 0x03, 0x04, 0x05 };
+
+const unsigned char segmentOrder[6] PROGMEM = {2,1,0,5,4,3};
+
+// unsigned char ascii[] = { 0x30+5, 0x31+5, 0x32+5, 0x33+5, 0x34+5, 0x35+5 };
+unsigned char vals[] = { 0x00, 0x01, 0x02, 0x03, 0x04, 0x05 };
+
+unsigned char segments[6];
+
 void main(){
 	SetClkDioMode(1,1);
 	//Turn display on and set brightness
@@ -82,8 +91,15 @@ void main(){
 				| (BRIGHTNESS & 0x07)); 	//set brightness
 	});
 	while(1){
-		for(int i = 0; i < 6; i++) segments[i]++;
+		for(int i = 0; i < 6; i++) {
+			//assign in segment order
+			segments[pgm_read_byte(&segmentOrder[i])]
+			//lookup ascii in PROGMEM
+			 	= pgm_read_byte(&chars[vals[i] + 0x30]);
+			vals[i] = (vals[i]+1)%10;
+		}
 		// All segments on
 		sendSegs(segments);
+		_delay_ms(100);
 	}
 }
