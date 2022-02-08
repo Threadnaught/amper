@@ -47,7 +47,7 @@ static inline void SetClkDioMode(unsigned char ClkMode, unsigned char DioMode){
 	SetClkDioMode(1,1);\
 }
 
-//Bang the bits to the TM1637
+//Bang b out to the TM1637
 void sendByte(unsigned char b){
 	for(unsigned char i = 0; i < 8; i++) {
 		SetClkDioMode(0,1);
@@ -61,7 +61,7 @@ void sendByte(unsigned char b){
 	SetClkDioMode(0,0);
 }
 
-//Assumes segs is 6 bytes long
+//Assumes segs is DIGITS bytes long
 void sendSegs(const unsigned char* segs){
 	txn({
 		sendByte(LED_ADDRESS);
