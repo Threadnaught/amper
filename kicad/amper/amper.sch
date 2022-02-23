@@ -848,25 +848,25 @@ Wire Notes Line
 $Comp
 L Connector_Generic:Conn_01x10 J4
 U 1 1 61F3370B
-P 8550 2850
-F 0 "J4" H 8468 2125 50  0000 C CNN
-F 1 "Conn_01x10" H 8468 2216 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 8550 2850 50  0001 C CNN
-F 3 "~" H 8550 2850 50  0001 C CNN
-F 4 "Do Not Fit" H 8550 2850 50  0001 C CNN "Vendor"
-	1    8550 2850
+P 8400 2850
+F 0 "J4" H 8318 2125 50  0000 C CNN
+F 1 "Conn_01x10" H 8318 2216 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 8400 2850 50  0001 C CNN
+F 3 "~" H 8400 2850 50  0001 C CNN
+F 4 "Do Not Fit" H 8400 2850 50  0001 C CNN "Vendor"
+	1    8400 2850
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x10 J5
 U 1 1 61F743AC
-P 10850 2950
-F 0 "J5" H 10768 2225 50  0000 C CNN
-F 1 "Conn_01x10" H 10768 2316 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 10850 2950 50  0001 C CNN
-F 3 "~" H 10850 2950 50  0001 C CNN
-F 4 "Do Not Fit" H 10850 2950 50  0001 C CNN "Vendor"
-	1    10850 2950
+P 11000 2950
+F 0 "J5" H 10918 2225 50  0000 C CNN
+F 1 "Conn_01x10" H 10918 2316 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 11000 2950 50  0001 C CNN
+F 3 "~" H 11000 2950 50  0001 C CNN
+F 4 "Do Not Fit" H 11000 2950 50  0001 C CNN "Vendor"
+	1    11000 2950
 	1    0    0    1   
 $EndComp
 Text Label 9850 4550 2    50   ~ 0
@@ -1390,45 +1390,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny806_1606_Data_Sheet_4
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8750 2450 9000 2450
-Wire Wire Line
-	8750 2550 9100 2550
-Wire Wire Line
-	8750 2650 9100 2650
-Wire Wire Line
-	8750 2750 9100 2750
-Wire Wire Line
-	8750 2850 9100 2850
-Wire Wire Line
-	8750 2950 9100 2950
-Wire Wire Line
-	8750 3050 9100 3050
-Wire Wire Line
-	8750 3150 9100 3150
-Wire Wire Line
-	8750 3250 9100 3250
-Wire Wire Line
-	8750 3350 9100 3350
-Wire Wire Line
 	10300 2450 10400 2450
-Wire Wire Line
-	10300 2550 10650 2550
-Wire Wire Line
-	10300 2650 10650 2650
-Wire Wire Line
-	10300 2750 10650 2750
-Wire Wire Line
-	10300 2850 10650 2850
-Wire Wire Line
-	10300 2950 10650 2950
-Wire Wire Line
-	10300 3050 10650 3050
-Wire Wire Line
-	10300 3150 10650 3150
-Wire Wire Line
-	10300 3250 10650 3250
-Wire Wire Line
-	10300 3350 10650 3350
 $Comp
 L power:+5V #PWR?
 U 1 1 622DD6E8
@@ -1463,6 +1425,72 @@ Wire Wire Line
 Wire Wire Line
 	10150 2000 10150 2100
 Connection ~ 10400 2450
+Text Label 10350 2850 0    50   ~ 0
+AtProg
+Text Label 10350 2750 0    50   ~ 0
+SourceAAdc
 Wire Wire Line
-	10400 2450 10650 2450
+	10400 2450 10800 2450
+Wire Wire Line
+	10300 2550 10800 2550
+Wire Wire Line
+	10300 2650 10800 2650
+Wire Wire Line
+	10300 2750 10800 2750
+Wire Wire Line
+	10300 2850 10800 2850
+Wire Wire Line
+	10300 2950 10800 2950
+Wire Wire Line
+	10300 3050 10800 3050
+Wire Wire Line
+	10300 3150 10800 3150
+Wire Wire Line
+	10300 3250 10800 3250
+Wire Wire Line
+	10300 3350 10800 3350
+Text Label 10350 2650 0    50   ~ 0
+SourceBAdc
+Text Label 10350 2550 0    50   ~ 0
+SourceAPwm
+Text Label 9050 2550 2    50   ~ 0
+Tm1637Clk
+Wire Wire Line
+	8600 3350 9100 3350
+Wire Wire Line
+	8600 3250 9100 3250
+Wire Wire Line
+	8600 3050 9100 3050
+Wire Wire Line
+	8600 3150 9100 3150
+Wire Wire Line
+	8600 2850 9100 2850
+Wire Wire Line
+	8600 2950 9100 2950
+Wire Wire Line
+	8600 2650 9100 2650
+Wire Wire Line
+	8600 2750 9100 2750
+Wire Wire Line
+	8600 2450 9000 2450
+Wire Wire Line
+	8600 2550 9100 2550
+Text Label 9050 2650 2    50   ~ 0
+Tm1637Dio
+Text Label 9050 2750 2    50   ~ 0
+ResultAdc
+Text Label 10350 3350 0    50   ~ 0
+SourceBPwm
+Text Label 9000 3250 2    50   ~ 0
+UartTx
+Text Label 9000 3150 2    50   ~ 0
+UartRx
+Text Label 10350 3250 0    50   ~ 0
+SourceAUp
+Text Label 10350 3150 0    50   ~ 0
+SourceADn
+Text Label 10350 3050 0    50   ~ 0
+SourceBUp
+Text Label 10350 2950 0    50   ~ 0
+SourceBDn
 $EndSCHEMATC

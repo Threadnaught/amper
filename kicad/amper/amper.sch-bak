@@ -93,11 +93,11 @@ Wire Wire Line
 Wire Wire Line
 	1150 5000 1150 5650
 Text Label 1550 5100 2    50   ~ 0
-SourceA
+SourceAAdc
 Wire Wire Line
 	1550 5100 1650 5100
 Text Label 1550 4900 2    50   ~ 0
-SourceB
+SourceBAdc
 Wire Wire Line
 	1550 4900 1650 4900
 $Comp
@@ -479,9 +479,9 @@ Connection ~ 5300 5900
 Wire Wire Line
 	5300 5900 5000 5900
 Text Label 5500 6500 0    50   ~ 0
-DIO
+Tm1636Dio
 Text Label 5500 6400 0    50   ~ 0
-CLK
+Tm1636Clk
 $Comp
 L Device:C C3
 U 1 1 61E5B1D0
@@ -528,11 +528,11 @@ Wire Wire Line
 	6100 7000 6350 7000
 Connection ~ 6100 7000
 Text Label 5350 1500 2    50   ~ 0
-SourceAPWM
+SourceAPwm
 Wire Wire Line
 	7400 1900 7400 2000
 Text Label 7900 1550 0    50   ~ 0
-SourceA
+SourceAAdc
 Wire Wire Line
 	2250 3450 2250 3350
 Connection ~ 2250 3450
@@ -656,7 +656,7 @@ $EndComp
 Wire Wire Line
 	7400 1300 7400 1550
 Text Label 5400 3650 2    50   ~ 0
-SourceBPWM
+SourceBPwm
 $Comp
 L Device:R R8
 U 1 1 61EFA66E
@@ -765,7 +765,7 @@ Connection ~ 6000 3150
 Wire Wire Line
 	6600 3450 6700 3450
 Text Label 7950 3700 0    50   ~ 0
-SourceB
+SourceBAdc
 $Comp
 L Connector:TestPoint TP2
 U 1 1 61EFA6AE
@@ -848,31 +848,31 @@ Wire Notes Line
 $Comp
 L Connector_Generic:Conn_01x10 J4
 U 1 1 61F3370B
-P 8550 2850
-F 0 "J4" H 8468 2125 50  0000 C CNN
-F 1 "Conn_01x10" H 8468 2216 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 8550 2850 50  0001 C CNN
-F 3 "~" H 8550 2850 50  0001 C CNN
-F 4 "Do Not Fit" H 8550 2850 50  0001 C CNN "Vendor"
-	1    8550 2850
+P 8400 2850
+F 0 "J4" H 8318 2125 50  0000 C CNN
+F 1 "Conn_01x10" H 8318 2216 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 8400 2850 50  0001 C CNN
+F 3 "~" H 8400 2850 50  0001 C CNN
+F 4 "Do Not Fit" H 8400 2850 50  0001 C CNN "Vendor"
+	1    8400 2850
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x10 J5
 U 1 1 61F743AC
-P 10850 2950
-F 0 "J5" H 10768 2225 50  0000 C CNN
-F 1 "Conn_01x10" H 10768 2316 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 10850 2950 50  0001 C CNN
-F 3 "~" H 10850 2950 50  0001 C CNN
-F 4 "Do Not Fit" H 10850 2950 50  0001 C CNN "Vendor"
-	1    10850 2950
+P 11000 2950
+F 0 "J5" H 10918 2225 50  0000 C CNN
+F 1 "Conn_01x10" H 10918 2316 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 11000 2950 50  0001 C CNN
+F 3 "~" H 11000 2950 50  0001 C CNN
+F 4 "Do Not Fit" H 11000 2950 50  0001 C CNN "Vendor"
+	1    11000 2950
 	1    0    0    1   
 $EndComp
 Text Label 9850 4550 2    50   ~ 0
-CLK
+Tm1636Clk
 Text Label 9850 4650 2    50   ~ 0
-DIO
+Tm1636Dio
 Text Label 9850 4750 2    50   ~ 0
 SourceAUp
 Text Label 9850 4850 2    50   ~ 0
@@ -894,20 +894,20 @@ Wire Wire Line
 Wire Wire Line
 	9850 5050 9950 5050
 Text Label 3300 5000 0    50   ~ 0
-AmpOut
+ResultAdc
 Wire Wire Line
 	3300 5000 3200 5000
 Connection ~ 3200 5000
 Text Label 9850 5150 2    50   ~ 0
-SourceAPWM
+SourceAPwm
 Text Label 9850 5250 2    50   ~ 0
-SourceA
+SourceAAdc
 Text Label 9850 5350 2    50   ~ 0
-SourceBPWM
+SourceBPwm
 Text Label 9850 5450 2    50   ~ 0
-SourceB
+SourceBAdc
 Text Label 9850 5550 2    50   ~ 0
-AmpOut
+ResultAdc
 Wire Wire Line
 	9850 5150 9950 5150
 Wire Wire Line
@@ -1390,43 +1390,99 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny806_1606_Data_Sheet_4
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8750 2450 9100 2450
+	10300 2450 10400 2450
+$Comp
+L power:+5V #PWR?
+U 1 1 622DD6E8
+P 9000 2350
+F 0 "#PWR?" H 9000 2200 50  0001 C CNN
+F 1 "+5V" H 9015 2523 50  0000 C CNN
+F 2 "" H 9000 2350 50  0001 C CNN
+F 3 "" H 9000 2350 50  0001 C CNN
+	1    9000 2350
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	8750 2550 9100 2550
+	9000 2350 9000 2450
+Connection ~ 9000 2450
 Wire Wire Line
-	8750 2650 9100 2650
+	9000 2450 9100 2450
+$Comp
+L power:GND #PWR?
+U 1 1 622EC3F9
+P 10150 2100
+F 0 "#PWR?" H 10150 1850 50  0001 C CNN
+F 1 "GND" H 10155 1927 50  0000 C CNN
+F 2 "" H 10150 2100 50  0001 C CNN
+F 3 "" H 10150 2100 50  0001 C CNN
+	1    10150 2100
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	8750 2750 9100 2750
+	10400 2450 10400 2000
 Wire Wire Line
-	8750 2850 9100 2850
+	10400 2000 10150 2000
 Wire Wire Line
-	8750 2950 9100 2950
+	10150 2000 10150 2100
+Connection ~ 10400 2450
+Text Label 10350 2850 0    50   ~ 0
+AtProg
+Text Label 10350 2750 0    50   ~ 0
+SourceAAdc
 Wire Wire Line
-	8750 3050 9100 3050
+	10400 2450 10800 2450
 Wire Wire Line
-	8750 3150 9100 3150
+	10300 2550 10800 2550
 Wire Wire Line
-	8750 3250 9100 3250
+	10300 2650 10800 2650
 Wire Wire Line
-	8750 3350 9100 3350
+	10300 2750 10800 2750
 Wire Wire Line
-	10300 2450 10650 2450
+	10300 2850 10800 2850
 Wire Wire Line
-	10300 2550 10650 2550
+	10300 2950 10800 2950
 Wire Wire Line
-	10300 2650 10650 2650
+	10300 3050 10800 3050
 Wire Wire Line
-	10300 2750 10650 2750
+	10300 3150 10800 3150
 Wire Wire Line
-	10300 2850 10650 2850
+	10300 3250 10800 3250
 Wire Wire Line
-	10300 2950 10650 2950
+	10300 3350 10800 3350
+Text Label 10350 2650 0    50   ~ 0
+SourceBAdc
+Text Label 10350 2550 0    50   ~ 0
+SourceAPwm
+Text Label 9050 2550 2    50   ~ 0
+Tm1637Clk
 Wire Wire Line
-	10300 3050 10650 3050
+	8600 3350 9100 3350
 Wire Wire Line
-	10300 3150 10650 3150
+	8600 3250 9100 3250
 Wire Wire Line
-	10300 3250 10650 3250
+	8600 3050 9100 3050
 Wire Wire Line
-	10300 3350 10650 3350
+	8600 3150 9100 3150
+Wire Wire Line
+	8600 2850 9100 2850
+Wire Wire Line
+	8600 2950 9100 2950
+Wire Wire Line
+	8600 2650 9100 2650
+Wire Wire Line
+	8600 2750 9100 2750
+Wire Wire Line
+	8600 2450 9000 2450
+Wire Wire Line
+	8600 2550 9100 2550
+Text Label 9050 2650 2    50   ~ 0
+Tm1637Dio
+Text Label 9050 2750 2    50   ~ 0
+ResultAdc
+Text Label 10350 3350 0    50   ~ 0
+SourceBPwm
+Text Label 9000 3250 2    50   ~ 0
+UartTx
+Text Label 9000 3150 2    50   ~ 0
+UartRx
 $EndSCHEMATC
