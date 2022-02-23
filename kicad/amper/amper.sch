@@ -93,11 +93,11 @@ Wire Wire Line
 Wire Wire Line
 	1150 5000 1150 5650
 Text Label 1550 5100 2    50   ~ 0
-SourceA
+SourceAAdc
 Wire Wire Line
 	1550 5100 1650 5100
 Text Label 1550 4900 2    50   ~ 0
-SourceB
+SourceBAdc
 Wire Wire Line
 	1550 4900 1650 4900
 $Comp
@@ -479,9 +479,9 @@ Connection ~ 5300 5900
 Wire Wire Line
 	5300 5900 5000 5900
 Text Label 5500 6500 0    50   ~ 0
-DIO
+Tm1636Dio
 Text Label 5500 6400 0    50   ~ 0
-CLK
+Tm1636Clk
 $Comp
 L Device:C C3
 U 1 1 61E5B1D0
@@ -528,11 +528,11 @@ Wire Wire Line
 	6100 7000 6350 7000
 Connection ~ 6100 7000
 Text Label 5350 1500 2    50   ~ 0
-SourceAPWM
+SourceAPwm
 Wire Wire Line
 	7400 1900 7400 2000
 Text Label 7900 1550 0    50   ~ 0
-SourceA
+SourceAAdc
 Wire Wire Line
 	2250 3450 2250 3350
 Connection ~ 2250 3450
@@ -656,7 +656,7 @@ $EndComp
 Wire Wire Line
 	7400 1300 7400 1550
 Text Label 5400 3650 2    50   ~ 0
-SourceBPWM
+SourceBPwm
 $Comp
 L Device:R R8
 U 1 1 61EFA66E
@@ -765,7 +765,7 @@ Connection ~ 6000 3150
 Wire Wire Line
 	6600 3450 6700 3450
 Text Label 7950 3700 0    50   ~ 0
-SourceB
+SourceBAdc
 $Comp
 L Connector:TestPoint TP2
 U 1 1 61EFA6AE
@@ -870,9 +870,9 @@ F 4 "Do Not Fit" H 10850 2950 50  0001 C CNN "Vendor"
 	1    0    0    1   
 $EndComp
 Text Label 9850 4550 2    50   ~ 0
-CLK
+Tm1636Clk
 Text Label 9850 4650 2    50   ~ 0
-DIO
+Tm1636Dio
 Text Label 9850 4750 2    50   ~ 0
 SourceAUp
 Text Label 9850 4850 2    50   ~ 0
@@ -894,20 +894,20 @@ Wire Wire Line
 Wire Wire Line
 	9850 5050 9950 5050
 Text Label 3300 5000 0    50   ~ 0
-AmpOut
+ResultAdc
 Wire Wire Line
 	3300 5000 3200 5000
 Connection ~ 3200 5000
 Text Label 9850 5150 2    50   ~ 0
-SourceAPWM
+SourceAPwm
 Text Label 9850 5250 2    50   ~ 0
-SourceA
+SourceAAdc
 Text Label 9850 5350 2    50   ~ 0
-SourceBPWM
+SourceBPwm
 Text Label 9850 5450 2    50   ~ 0
-SourceB
+SourceBAdc
 Text Label 9850 5550 2    50   ~ 0
-AmpOut
+ResultAdc
 Wire Wire Line
 	9850 5150 9950 5150
 Wire Wire Line
