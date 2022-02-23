@@ -499,7 +499,7 @@ L Device:C C4
 U 1 1 61E5B72C
 P 6100 6150
 F 0 "C4" H 6215 6196 50  0000 L CNN
-F 1 "10uF" H 6100 6050 50  0000 L CNN
+F 1 "2uF" H 6100 6050 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6138 6000 50  0001 C CNN
 F 3 "~" H 6100 6150 50  0001 C CNN
 F 4 "LCSC" H 6100 6150 50  0001 C CNN "Vendor"
@@ -531,9 +531,7 @@ Text Label 5350 1500 2    50   ~ 0
 SourceAPWM
 Wire Wire Line
 	7400 1900 7400 2000
-Wire Wire Line
-	7400 1550 7500 1550
-Text Label 7500 1550 0    50   ~ 0
+Text Label 7900 1550 0    50   ~ 0
 SourceA
 Wire Wire Line
 	2250 3450 2250 3350
@@ -664,7 +662,7 @@ L Device:R R8
 U 1 1 61EFA66E
 P 5750 3650
 F 0 "R8" V 5543 3650 50  0000 C CNN
-F 1 "60k" V 5634 3650 50  0000 C CNN
+F 1 "30k" V 5634 3650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5680 3650 50  0001 C CNN
 F 3 "~" H 5750 3650 50  0001 C CNN
 F 4 "Already Have" H 5750 3650 50  0001 C CNN "Vendor"
@@ -683,7 +681,7 @@ L Device:R R11
 U 1 1 61EFA678
 P 6000 3400
 F 0 "R11" H 6070 3446 50  0000 L CNN
-F 1 "25k" H 6070 3355 50  0000 L CNN
+F 1 "12k" H 6070 3355 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5930 3400 50  0001 C CNN
 F 3 "~" H 6000 3400 50  0001 C CNN
 F 4 "Already Have" H 6000 3400 50  0001 C CNN "Vendor"
@@ -695,7 +693,7 @@ L Device:R R12
 U 1 1 61EFA67E
 P 6000 3900
 F 0 "R12" H 6070 3946 50  0000 L CNN
-F 1 "40k" H 6070 3855 50  0000 L CNN
+F 1 "20k" H 6070 3855 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5930 3900 50  0001 C CNN
 F 3 "~" H 6000 3900 50  0001 C CNN
 F 4 "Already Have" H 6000 3900 50  0001 C CNN "Vendor"
@@ -766,9 +764,7 @@ $EndComp
 Connection ~ 6000 3150
 Wire Wire Line
 	6600 3450 6700 3450
-Wire Wire Line
-	7450 3700 7550 3700
-Text Label 7550 3700 0    50   ~ 0
+Text Label 7950 3700 0    50   ~ 0
 SourceB
 $Comp
 L Connector:TestPoint TP2
@@ -1085,13 +1081,9 @@ Wire Wire Line
 Text Notes 6600 4600 0    50   ~ 0
 This resistor may be\nuneccassary depending\non open circuit drain\ntime
 Wire Notes Line
-	6900 3750 7300 3750
-Wire Notes Line
 	7300 3750 7300 4250
 Wire Notes Line
 	7500 4250 7500 4650
-Wire Notes Line
-	7500 4650 6550 4650
 Wire Notes Line
 	6550 4650 6550 4250
 Wire Notes Line
@@ -1105,7 +1097,7 @@ L Device:R R7
 U 1 1 621F0C0F
 P 5700 1500
 F 0 "R7" V 5493 1500 50  0000 C CNN
-F 1 "60k" V 5584 1500 50  0000 C CNN
+F 1 "30k" V 5584 1500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5630 1500 50  0001 C CNN
 F 3 "~" H 5700 1500 50  0001 C CNN
 F 4 "Already Have" H 5700 1500 50  0001 C CNN "Vendor"
@@ -1124,7 +1116,7 @@ L Device:R R9
 U 1 1 621F0C19
 P 5950 1250
 F 0 "R9" H 6020 1296 50  0000 L CNN
-F 1 "25k" H 6020 1205 50  0000 L CNN
+F 1 "12k" H 6020 1205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5880 1250 50  0001 C CNN
 F 3 "~" H 5950 1250 50  0001 C CNN
 F 4 "Already Have" H 5950 1250 50  0001 C CNN "Vendor"
@@ -1136,7 +1128,7 @@ L Device:R R10
 U 1 1 621F0C1F
 P 5950 1750
 F 0 "R10" H 6020 1796 50  0000 L CNN
-F 1 "40k" H 6020 1705 50  0000 L CNN
+F 1 "20k" H 6020 1705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5880 1750 50  0001 C CNN
 F 3 "~" H 5950 1750 50  0001 C CNN
 F 4 "Already Have" H 5950 1750 50  0001 C CNN "Vendor"
@@ -1290,11 +1282,7 @@ Wire Wire Line
 Text Notes 6550 2450 0    50   ~ 0
 This resistor may be\nuneccassary depending\non open circuit drain\ntime
 Wire Notes Line
-	6850 1600 7250 1600
-Wire Notes Line
 	7250 1600 7250 2100
-Wire Notes Line
-	7450 2500 6500 2500
 Wire Notes Line
 	6500 2500 6500 2100
 Wire Notes Line
@@ -1330,7 +1318,7 @@ F 3 "~" V 6900 3450 50  0001 L CNN
 F 4 "LCSC" H 6900 3450 50  0001 C CNN "Vendor"
 F 5 "C181098" H 6900 3450 50  0001 C CNN "Part"
 	1    6900 3450
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Transistor_FET:FDS9435A Q1
@@ -1343,7 +1331,7 @@ F 3 "~" V 6850 1300 50  0001 L CNN
 F 4 "LCSC" H 6850 1300 50  0001 C CNN "Vendor"
 F 5 "C181098" H 6850 1300 50  0001 C CNN "Part"
 	1    6850 1300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J2
@@ -1417,4 +1405,65 @@ F 5 "C2909692" H 1550 3850 50  0001 C CNN "Part"
 	1    1550 3850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 62175534
+P 7850 3900
+F 0 "C?" H 7965 3946 50  0000 L CNN
+F 1 "5uF" H 7965 3855 50  0000 L CNN
+F 2 "" H 7850 3900 50  0001 C CNN
+F 3 "~" H 7850 3900 50  0001 C CNN
+	1    7850 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4150 7850 4150
+Wire Wire Line
+	7850 4150 7850 4050
+Connection ~ 7450 4150
+Wire Wire Line
+	7450 3700 7850 3700
+Wire Wire Line
+	7850 3750 7850 3700
+Connection ~ 7850 3700
+Wire Wire Line
+	7850 3700 7950 3700
+Wire Notes Line
+	8200 3750 8200 4650
+Wire Notes Line
+	6900 3750 8200 3750
+Wire Notes Line
+	6550 4650 8200 4650
+Text Notes 7650 4500 0    50   ~ 0
+Determine\ncombination\nwith testing
+$Comp
+L Device:CP1 C?
+U 1 1 621C95BD
+P 7800 1750
+F 0 "C?" H 7915 1796 50  0000 L CNN
+F 1 "5uF" H 7915 1705 50  0000 L CNN
+F 2 "" H 7800 1750 50  0001 C CNN
+F 3 "~" H 7800 1750 50  0001 C CNN
+	1    7800 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2000 7800 2000
+Wire Wire Line
+	7800 2000 7800 1900
+Text Notes 7600 2350 0    50   ~ 0
+Determine\ncombination\nwith testing
+Wire Notes Line
+	6500 2500 8150 2500
+Wire Wire Line
+	7400 1550 7800 1550
+Wire Wire Line
+	7800 1600 7800 1550
+Connection ~ 7800 1550
+Wire Wire Line
+	7800 1550 7900 1550
+Wire Notes Line
+	8150 1600 8150 2500
+Wire Notes Line
+	6850 1600 8150 1600
 $EndSCHEMATC
