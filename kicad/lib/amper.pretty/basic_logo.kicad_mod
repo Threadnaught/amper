@@ -1,6 +1,6 @@
-(module svg2mod (layer F.Cu) (tedit 61D5E701)
+(module svg2mod (layer F.Cu) (tedit 621C21D6)
   (attr smd)
-  (descr "Imported from inkscape/footprints/basic_logo.svg")
+  (descr "Imported from inkscape/footprints/basic_logo.svg.broken")
   (tags svg2mod)
   (fp_text reference svg2mod (at 0 -18.0481179777) (layer F.SilkS) hide
     (effects (font (size 1.524 1.524) (thickness 0.3048)))

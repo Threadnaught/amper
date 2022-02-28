@@ -93,11 +93,11 @@ Wire Wire Line
 Wire Wire Line
 	1150 5000 1150 5650
 Text Label 1550 5100 2    50   ~ 0
-SourceAAdc
+SourceAOut
 Wire Wire Line
 	1550 5100 1650 5100
 Text Label 1550 4900 2    50   ~ 0
-SourceBAdc
+SourceBOut
 Wire Wire Line
 	1550 4900 1650 4900
 $Comp
@@ -532,7 +532,7 @@ SourceAPwm
 Wire Wire Line
 	7400 1900 7400 2000
 Text Label 7900 1550 0    50   ~ 0
-SourceAAdc
+SourceAOut
 Wire Wire Line
 	2250 3450 2250 3350
 Connection ~ 2250 3450
@@ -765,7 +765,7 @@ Connection ~ 6000 3150
 Wire Wire Line
 	6600 3450 6700 3450
 Text Label 7950 3700 0    50   ~ 0
-SourceBAdc
+SourceBOut
 $Comp
 L Connector:TestPoint TP2
 U 1 1 61EFA6AE
@@ -845,30 +845,6 @@ Wire Notes Line
 	6250 3100 5550 3100
 Wire Notes Line
 	5550 3100 5550 4100
-$Comp
-L Connector_Generic:Conn_01x10 J4
-U 1 1 61F3370B
-P 8400 2850
-F 0 "J4" H 8318 2125 50  0000 C CNN
-F 1 "Conn_01x10" H 8318 2216 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 8400 2850 50  0001 C CNN
-F 3 "~" H 8400 2850 50  0001 C CNN
-F 4 "Do Not Fit" H 8400 2850 50  0001 C CNN "Vendor"
-	1    8400 2850
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x10 J5
-U 1 1 61F743AC
-P 11000 2950
-F 0 "J5" H 10918 2225 50  0000 C CNN
-F 1 "Conn_01x10" H 10918 2316 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 11000 2950 50  0001 C CNN
-F 3 "~" H 11000 2950 50  0001 C CNN
-F 4 "Do Not Fit" H 11000 2950 50  0001 C CNN "Vendor"
-	1    11000 2950
-	1    0    0    1   
-$EndComp
 Text Label 8950 4600 2    50   ~ 0
 Tm1636Clk
 Text Label 8950 4700 2    50   ~ 0
@@ -901,11 +877,11 @@ Connection ~ 3200 5000
 Text Label 8950 5200 2    50   ~ 0
 SourceAPwm
 Text Label 8950 5300 2    50   ~ 0
-SourceAAdc
+SourceAOut
 Text Label 8950 5400 2    50   ~ 0
 SourceBPwm
 Text Label 8950 5500 2    50   ~ 0
-SourceBAdc
+SourceBOut
 Text Label 8950 5600 2    50   ~ 0
 ResultAdc
 Wire Wire Line
@@ -1318,10 +1294,10 @@ F 5 "C2909692" H 1550 3850 50  0001 C CNN "Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C?
+L Device:CP1 C10
 U 1 1 62175534
 P 7850 3900
-F 0 "C?" H 7965 3946 50  0000 L CNN
+F 0 "C10" H 7965 3946 50  0000 L CNN
 F 1 "5uF" H 7965 3855 50  0000 L CNN
 F 2 "" H 7850 3900 50  0001 C CNN
 F 3 "~" H 7850 3900 50  0001 C CNN
@@ -1349,10 +1325,10 @@ Wire Notes Line
 Text Notes 7650 4500 0    50   ~ 0
 Determine\ncombination\nwith testing
 $Comp
-L Device:CP1 C?
+L Device:CP1 C9
 U 1 1 621C95BD
 P 7800 1750
-F 0 "C?" H 7915 1796 50  0000 L CNN
+F 0 "C9" H 7915 1796 50  0000 L CNN
 F 1 "5uF" H 7915 1705 50  0000 L CNN
 F 2 "" H 7800 1750 50  0001 C CNN
 F 3 "~" H 7800 1750 50  0001 C CNN
@@ -1379,212 +1355,212 @@ Wire Notes Line
 Wire Notes Line
 	6850 1600 8150 1600
 $Comp
-L amper-symbols:ATtiny1606-S U?
+L amper-symbols:ATtiny1606-S U6
 U 1 1 62224E78
-P 9700 3150
-F 0 "U?" H 9700 4115 50  0000 C CNN
-F 1 "ATtiny1606-S" H 9700 4024 50  0000 C CNN
-F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 9700 2800 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny806_1606_Data_Sheet_40002029A.pdf" H 9700 3150 50  0001 C CNN
-	1    9700 3150
+P 9850 2000
+F 0 "U6" H 9850 2965 50  0000 C CNN
+F 1 "ATtiny1606-S" H 9850 2874 50  0000 C CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 9850 1650 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny806_1606_Data_Sheet_40002029A.pdf" H 9850 2000 50  0001 C CNN
+	1    9850 2000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10300 2450 10400 2450
+	10450 1300 10550 1300
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0101
 U 1 1 622DD6E8
-P 9000 2350
-F 0 "#PWR?" H 9000 2200 50  0001 C CNN
-F 1 "+5V" H 9015 2523 50  0000 C CNN
-F 2 "" H 9000 2350 50  0001 C CNN
-F 3 "" H 9000 2350 50  0001 C CNN
-	1    9000 2350
+P 9150 1200
+F 0 "#PWR0101" H 9150 1050 50  0001 C CNN
+F 1 "+5V" H 9165 1373 50  0000 C CNN
+F 2 "" H 9150 1200 50  0001 C CNN
+F 3 "" H 9150 1200 50  0001 C CNN
+	1    9150 1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9000 2350 9000 2450
-Connection ~ 9000 2450
+	9150 1200 9150 1300
 Wire Wire Line
-	9000 2450 9100 2450
+	9150 1300 9250 1300
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 622EC3F9
-P 10150 2100
-F 0 "#PWR?" H 10150 1850 50  0001 C CNN
-F 1 "GND" H 10155 1927 50  0000 C CNN
-F 2 "" H 10150 2100 50  0001 C CNN
-F 3 "" H 10150 2100 50  0001 C CNN
-	1    10150 2100
+P 10300 950
+F 0 "#PWR0102" H 10300 700 50  0001 C CNN
+F 1 "GND" H 10305 777 50  0000 C CNN
+F 2 "" H 10300 950 50  0001 C CNN
+F 3 "" H 10300 950 50  0001 C CNN
+	1    10300 950 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10400 2450 10400 2000
+	10550 1300 10550 850 
 Wire Wire Line
-	10400 2000 10150 2000
+	10550 850  10300 850 
 Wire Wire Line
-	10150 2000 10150 2100
-Connection ~ 10400 2450
-Text Label 10350 2850 0    50   ~ 0
+	10300 850  10300 950 
+Text Label 10500 1700 0    50   ~ 0
 AtProg
-Text Label 10350 2750 0    50   ~ 0
-SourceAAdc
-Wire Wire Line
-	10400 2450 10800 2450
-Wire Wire Line
-	10300 2550 10800 2550
-Wire Wire Line
-	10300 2650 10800 2650
-Wire Wire Line
-	10300 2750 10800 2750
-Wire Wire Line
-	10300 2850 10800 2850
-Wire Wire Line
-	10300 2950 10800 2950
-Wire Wire Line
-	10300 3050 10800 3050
-Wire Wire Line
-	10300 3150 10800 3150
-Wire Wire Line
-	10300 3250 10800 3250
-Wire Wire Line
-	10300 3350 10800 3350
-Text Label 10350 2650 0    50   ~ 0
-SourceBAdc
-Text Label 10350 2550 0    50   ~ 0
+Text Label 10500 1600 0    50   ~ 0
+SourceAOut
+Text Label 10500 1500 0    50   ~ 0
+SourceBOut
+Text Label 10500 1400 0    50   ~ 0
 SourceAPwm
-Text Label 9050 2550 2    50   ~ 0
+Text Label 9200 1400 2    50   ~ 0
 Tm1637Clk
-Wire Wire Line
-	8600 3350 9100 3350
-Wire Wire Line
-	8600 3250 9100 3250
-Wire Wire Line
-	8600 3050 9100 3050
-Wire Wire Line
-	8600 3150 9100 3150
-Wire Wire Line
-	8600 2850 9100 2850
-Wire Wire Line
-	8600 2950 9100 2950
-Wire Wire Line
-	8600 2650 9100 2650
-Wire Wire Line
-	8600 2750 9100 2750
-Wire Wire Line
-	8600 2450 9000 2450
-Wire Wire Line
-	8600 2550 9100 2550
-Text Label 9050 2650 2    50   ~ 0
+Text Label 9200 1500 2    50   ~ 0
 Tm1637Dio
-Text Label 9050 2750 2    50   ~ 0
+Text Label 9200 1600 2    50   ~ 0
 ResultAdc
-Text Label 10350 3350 0    50   ~ 0
+Text Label 10500 2200 0    50   ~ 0
 SourceBPwm
-Text Label 9000 3250 2    50   ~ 0
+Text Label 9150 2100 2    50   ~ 0
 UartTx
-Text Label 9000 3150 2    50   ~ 0
+Text Label 9150 2000 2    50   ~ 0
 UartRx
-Text Label 10350 3250 0    50   ~ 0
+Text Label 10500 2100 0    50   ~ 0
 SourceAUp
-Text Label 10350 3150 0    50   ~ 0
+Text Label 10500 2000 0    50   ~ 0
 SourceADn
-Text Label 10350 3050 0    50   ~ 0
+Text Label 10500 1900 0    50   ~ 0
 SourceBUp
-Text Label 10350 2950 0    50   ~ 0
+Text Label 10500 1800 0    50   ~ 0
 SourceBDn
 $Comp
-L Connector_Generic:Conn_01x03 J?
+L Connector_Generic:Conn_01x03 J6
 U 1 1 62424A8C
-P 11000 4000
-F 0 "J?" H 11000 4300 50  0000 C CNN
-F 1 "Conn_01x03" H 11000 4200 50  0000 C CNN
-F 2 "" H 11000 4000 50  0001 C CNN
-F 3 "~" H 11000 4000 50  0001 C CNN
-	1    11000 4000
+P 10700 4800
+F 0 "J6" H 10700 5100 50  0000 C CNN
+F 1 "Conn_01x03" H 10700 5000 50  0000 C CNN
+F 2 "amper:PROG" H 10700 4800 50  0001 C CNN
+F 3 "~" H 10700 4800 50  0001 C CNN
+	1    10700 4800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J7
 U 1 1 624255C1
-P 11000 4950
-F 0 "J?" H 11000 5250 50  0000 C CNN
-F 1 "Conn_01x04" H 11000 5150 50  0000 C CNN
-F 2 "" H 11000 4950 50  0001 C CNN
-F 3 "~" H 11000 4950 50  0001 C CNN
-	1    11000 4950
+P 10700 5750
+F 0 "J7" H 10700 6050 50  0000 C CNN
+F 1 "Conn_01x04" H 10700 5950 50  0000 C CNN
+F 2 "amper:UART" H 10700 5750 50  0001 C CNN
+F 3 "~" H 10700 5750 50  0001 C CNN
+	1    10700 5750
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0103
 U 1 1 6242928C
-P 10700 3800
-F 0 "#PWR?" H 10700 3650 50  0001 C CNN
-F 1 "+5V" H 10715 3973 50  0000 C CNN
-F 2 "" H 10700 3800 50  0001 C CNN
-F 3 "" H 10700 3800 50  0001 C CNN
-	1    10700 3800
+P 10400 4600
+F 0 "#PWR0103" H 10400 4450 50  0001 C CNN
+F 1 "+5V" H 10415 4773 50  0000 C CNN
+F 2 "" H 10400 4600 50  0001 C CNN
+F 3 "" H 10400 4600 50  0001 C CNN
+	1    10400 4600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10700 3800 10700 3900
+	10400 4600 10400 4700
 Wire Wire Line
-	10700 3900 10800 3900
+	10400 4700 10500 4700
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0104
 U 1 1 6243649F
-P 10700 4200
-F 0 "#PWR?" H 10700 3950 50  0001 C CNN
-F 1 "GND" H 10705 4027 50  0000 C CNN
-F 2 "" H 10700 4200 50  0001 C CNN
-F 3 "" H 10700 4200 50  0001 C CNN
-	1    10700 4200
+P 10400 5000
+F 0 "#PWR0104" H 10400 4750 50  0001 C CNN
+F 1 "GND" H 10405 4827 50  0000 C CNN
+F 2 "" H 10400 5000 50  0001 C CNN
+F 3 "" H 10400 5000 50  0001 C CNN
+	1    10400 5000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10700 4200 10700 4100
+	10400 5000 10400 4900
 Wire Wire Line
-	10700 4100 10800 4100
-Text Label 10700 4000 2    50   ~ 0
+	10400 4900 10500 4900
+Text Label 10400 4800 2    50   ~ 0
 AtProg
 Wire Wire Line
-	10700 4000 10800 4000
+	10400 4800 10500 4800
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0105
 U 1 1 62454C28
-P 10700 4750
-F 0 "#PWR?" H 10700 4600 50  0001 C CNN
-F 1 "+5V" H 10715 4923 50  0000 C CNN
-F 2 "" H 10700 4750 50  0001 C CNN
-F 3 "" H 10700 4750 50  0001 C CNN
-	1    10700 4750
+P 10400 5550
+F 0 "#PWR0105" H 10400 5400 50  0001 C CNN
+F 1 "+5V" H 10415 5723 50  0000 C CNN
+F 2 "" H 10400 5550 50  0001 C CNN
+F 3 "" H 10400 5550 50  0001 C CNN
+	1    10400 5550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10700 4750 10700 4850
+	10400 5550 10400 5650
 Wire Wire Line
-	10700 4850 10800 4850
+	10400 5650 10500 5650
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0106
 U 1 1 62454C30
-P 10700 5250
-F 0 "#PWR?" H 10700 5000 50  0001 C CNN
-F 1 "GND" H 10705 5077 50  0000 C CNN
-F 2 "" H 10700 5250 50  0001 C CNN
-F 3 "" H 10700 5250 50  0001 C CNN
-	1    10700 5250
+P 10400 6050
+F 0 "#PWR0106" H 10400 5800 50  0001 C CNN
+F 1 "GND" H 10405 5877 50  0000 C CNN
+F 2 "" H 10400 6050 50  0001 C CNN
+F 3 "" H 10400 6050 50  0001 C CNN
+	1    10400 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10700 5250 10700 5150
+	10400 6050 10400 5950
 Wire Wire Line
-	10700 5150 10800 5150
-Text Label 10700 4950 2    50   ~ 0
+	10400 5950 10500 5950
+Text Label 10400 5750 2    50   ~ 0
 UartTx
 Wire Wire Line
-	10700 4950 10800 4950
-Text Label 10700 5050 2    50   ~ 0
+	10400 5750 10500 5750
+Text Label 10400 5850 2    50   ~ 0
 UartRx
 Wire Wire Line
-	10700 5050 10800 5050
+	10400 5850 10500 5850
+Wire Wire Line
+	9150 2100 9250 2100
+Wire Wire Line
+	9150 2000 9250 2000
+Wire Wire Line
+	9200 1400 9250 1400
+Wire Wire Line
+	9200 1500 9250 1500
+Wire Wire Line
+	9200 1600 9250 1600
+NoConn ~ 9250 1700
+NoConn ~ 9250 1800
+NoConn ~ 9250 1900
+NoConn ~ 9250 2200
+Wire Wire Line
+	10450 1400 10500 1400
+Wire Wire Line
+	10450 1500 10500 1500
+Wire Wire Line
+	10500 1600 10450 1600
+Wire Wire Line
+	10450 1700 10500 1700
+Wire Wire Line
+	10500 1800 10450 1800
+Wire Wire Line
+	10450 1900 10500 1900
+Wire Wire Line
+	10500 2000 10450 2000
+Wire Wire Line
+	10450 2100 10500 2100
+Wire Wire Line
+	10500 2200 10450 2200
+Text Notes 9100 2650 0    100  ~ 0
+Expose these traces\nfor ease of bodging
+Wire Notes Line
+	11000 2700 8750 2700
+Wire Notes Line
+	8750 800  11000 800 
+Wire Notes Line
+	8750 800  8750 2700
+Wire Notes Line
+	11000 2700 11000 800 
 $EndSCHEMATC
