@@ -1640,12 +1640,12 @@ Wire Notes Line
 Wire Notes Line
 	700  4400 700  6250
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J?
+L Connector_Generic:Conn_02x05_Odd_Even J5
 U 1 1 62A504FE
 P 3500 7000
-F 0 "J?" H 3550 7417 50  0000 C CNN
+F 0 "J5" H 3550 7417 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 3550 7326 50  0000 C CNN
-F 2 "" H 3500 7000 50  0001 C CNN
+F 2 "amper:2.54_2x5_alternate" H 3500 7000 50  0001 C CNN
 F 3 "~" H 3500 7000 50  0001 C CNN
 	1    3500 7000
 	1    0    0    -1  
@@ -1691,12 +1691,12 @@ R5
 Wire Wire Line
 	3850 7200 3800 7200
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J?
+L Connector_Generic:Conn_02x05_Odd_Even J2
 U 1 1 62B86D52
 P 2600 7000
-F 0 "J?" H 2650 7417 50  0000 C CNN
+F 0 "J2" H 2650 7417 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 2650 7326 50  0000 C CNN
-F 2 "" H 2600 7000 50  0001 C CNN
+F 2 "amper:2.54_2x5_alternate" H 2600 7000 50  0001 C CNN
 F 3 "~" H 2600 7000 50  0001 C CNN
 	1    2600 7000
 	1    0    0    -1  
@@ -1742,12 +1742,12 @@ R5
 Wire Wire Line
 	2950 7200 2900 7200
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J?
+L Connector_Generic:Conn_02x05_Odd_Even J1
 U 1 1 62C0A189
 P 1700 7000
-F 0 "J?" H 1750 7417 50  0000 C CNN
+F 0 "J1" H 1750 7417 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 1750 7326 50  0000 C CNN
-F 2 "" H 1700 7000 50  0001 C CNN
+F 2 "amper:2.54_2x5_alternate" H 1700 7000 50  0001 C CNN
 F 3 "~" H 1700 7000 50  0001 C CNN
 	1    1700 7000
 	1    0    0    -1  
@@ -1785,10 +1785,10 @@ R5
 Wire Wire Line
 	2050 7200 2000 7200
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0114
 U 1 1 62C63EF1
 P 1200 6700
-F 0 "#PWR?" H 1200 6550 50  0001 C CNN
+F 0 "#PWR0114" H 1200 6550 50  0001 C CNN
 F 1 "+5V" H 1215 6873 50  0000 C CNN
 F 2 "" H 1200 6700 50  0001 C CNN
 F 3 "" H 1200 6700 50  0001 C CNN
@@ -1800,10 +1800,10 @@ Wire Wire Line
 Wire Wire Line
 	1200 6800 1500 6800
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0115
 U 1 1 62C77E5E
 P 1200 7300
-F 0 "#PWR?" H 1200 7050 50  0001 C CNN
+F 0 "#PWR0115" H 1200 7050 50  0001 C CNN
 F 1 "GND" H 1205 7127 50  0000 C CNN
 F 2 "" H 1200 7300 50  0001 C CNN
 F 3 "" H 1200 7300 50  0001 C CNN
