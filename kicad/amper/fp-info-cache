@@ -1,4 +1,4 @@
-16939107581088923
+16940753921675923
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75310,8 +75310,8 @@ SolderHeader
 Imported from inkscape/footprints/SolderHeader.svg.broken
 svg2mod
 0
-0
-0
+5
+5
 amper
 TM1637
 
@@ -75326,6 +75326,13 @@ svg2mod
 0
 4
 4
+amper
+VT1H100M-CRD54
+
+
+0
+2
+2
 amper
 basic_logo
 Imported from inkscape/footprints/basic_logo.svg.broken
