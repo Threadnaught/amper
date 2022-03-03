@@ -1,4 +1,4 @@
-16940753921675923
+16942400265726923
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75291,6 +75291,13 @@ K2-1157SP-I4SW-01
 0
 4
 2
+amper
+MC-303S
+
+
+0
+10
+7
 amper
 PROG
 Imported from inkscape/footprints/PROG.svg.broken
