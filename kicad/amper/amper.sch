@@ -1645,7 +1645,7 @@ U 1 1 62A504FE
 P 3500 7000
 F 0 "J3" H 3550 7417 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 3550 7326 50  0000 C CNN
-F 2 "amper:2.54_2x5_alternate" H 3500 7000 50  0001 C CNN
+F 2 "amper:2.54_2x5_alternate-opamp-side" H 3500 7000 50  0001 C CNN
 F 3 "~" H 3500 7000 50  0001 C CNN
 	1    3500 7000
 	1    0    0    -1  
@@ -1747,23 +1747,19 @@ U 1 1 62C0A189
 P 1700 7000
 F 0 "J1" H 1750 7417 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 1750 7326 50  0000 C CNN
-F 2 "amper:2.54_2x5_alternate" H 1700 7000 50  0001 C CNN
+F 2 "amper:2.54_2x5_alternate-source-side" H 1700 7000 50  0001 C CNN
 F 3 "~" H 1700 7000 50  0001 C CNN
 	1    1700 7000
 	1    0    0    -1  
 $EndComp
-Text Label 1450 6900 2    50   ~ 0
-SourceBOut
-Text Label 1450 7000 2    50   ~ 0
-ResultAdc
 Text Label 1450 7100 2    50   ~ 0
-SourceAOut
+SourceBOut
+Text Label 1450 7200 2    50   ~ 0
+ResultAdc
+Wire Wire Line
+	1450 7200 1500 7200
 Wire Wire Line
 	1500 7100 1450 7100
-Wire Wire Line
-	1450 7000 1500 7000
-Wire Wire Line
-	1500 6900 1450 6900
 Text Label 2050 6800 0    50   ~ 0
 R1
 Wire Wire Line
@@ -1787,31 +1783,35 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR04
 U 1 1 62C63EF1
-P 1200 6700
-F 0 "#PWR04" H 1200 6550 50  0001 C CNN
-F 1 "+5V" H 1215 6873 50  0000 C CNN
-F 2 "" H 1200 6700 50  0001 C CNN
-F 3 "" H 1200 6700 50  0001 C CNN
-	1    1200 6700
+P 950 6700
+F 0 "#PWR04" H 950 6550 50  0001 C CNN
+F 1 "+5V" H 965 6873 50  0000 C CNN
+F 2 "" H 950 6700 50  0001 C CNN
+F 3 "" H 950 6700 50  0001 C CNN
+	1    950  6700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 6700 1200 6800
-Wire Wire Line
-	1200 6800 1500 6800
+	950  6700 950  6800
 $Comp
 L power:GND #PWR05
 U 1 1 62C77E5E
-P 1200 7300
-F 0 "#PWR05" H 1200 7050 50  0001 C CNN
-F 1 "GND" H 1205 7127 50  0000 C CNN
-F 2 "" H 1200 7300 50  0001 C CNN
-F 3 "" H 1200 7300 50  0001 C CNN
-	1    1200 7300
+P 950 7000
+F 0 "#PWR05" H 950 6750 50  0001 C CNN
+F 1 "GND" H 955 6827 50  0000 C CNN
+F 2 "" H 950 7000 50  0001 C CNN
+F 3 "" H 950 7000 50  0001 C CNN
+	1    950  7000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 7300 1200 7200
+	950  7000 950  6900
 Wire Wire Line
-	1200 7200 1500 7200
+	1500 7000 1450 7000
+Text Label 1450 7000 2    50   ~ 0
+SourceAOut
+Wire Wire Line
+	950  6900 1500 6900
+Wire Wire Line
+	950  6800 1500 6800
 $EndSCHEMATC
