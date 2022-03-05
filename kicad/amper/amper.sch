@@ -222,25 +222,25 @@ Wire Wire Line
 	950  5300 950  5200
 Wire Wire Line
 	950  5200 1450 5200
-Text Label 2450 5700 0    50   ~ 0
+Text Label 1350 6100 2    50   ~ 0
 SourceADigit1
-Text Label 2450 5800 0    50   ~ 0
+Text Label 2450 6100 0    50   ~ 0
 SourceADigit2
 Wire Wire Line
 	2350 5700 2450 5700
 Wire Wire Line
 	2350 5800 2450 5800
-Text Label 2450 5900 0    50   ~ 0
+Text Label 2450 5700 0    50   ~ 0
 SourceBDigit1
-Text Label 2450 6000 0    50   ~ 0
+Text Label 2450 5800 0    50   ~ 0
 SourceBDigit2
 Wire Wire Line
 	2350 5900 2450 5900
 Wire Wire Line
 	2350 6000 2450 6000
-Text Label 2450 6100 0    50   ~ 0
+Text Label 2450 6000 0    50   ~ 0
 OutDigit1
-Text Label 1350 6100 2    50   ~ 0
+Text Label 2450 5900 0    50   ~ 0
 OutDigit2
 Wire Wire Line
 	2350 6100 2450 6100
@@ -1730,10 +1730,10 @@ Wire Wire Line
 Wire Wire Line
 	1400 3750 1400 3650
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 6314BDA0
 P 1400 3850
-F 0 "#PWR?" H 1400 3600 50  0001 C CNN
+F 0 "#PWR0101" H 1400 3600 50  0001 C CNN
 F 1 "GND" H 1405 3677 50  0000 C CNN
 F 2 "" H 1400 3850 50  0001 C CNN
 F 3 "" H 1400 3850 50  0001 C CNN
@@ -1791,10 +1791,10 @@ Wire Wire Line
 Wire Wire Line
 	1900 1500 2000 1500
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0102
 U 1 1 631E51F2
 P 2000 1000
-F 0 "#PWR?" H 2000 850 50  0001 C CNN
+F 0 "#PWR0102" H 2000 850 50  0001 C CNN
 F 1 "+5V" H 2015 1173 50  0000 C CNN
 F 2 "" H 2000 1000 50  0001 C CNN
 F 3 "~" H 2000 1000 50  0001 C CNN
@@ -1835,10 +1835,10 @@ Wire Wire Line
 	1400 2000 1400 1900
 Connection ~ 1400 2000
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 6328B5C3
 P 1400 2100
-F 0 "#PWR?" H 1400 1850 50  0001 C CNN
+F 0 "#PWR0103" H 1400 1850 50  0001 C CNN
 F 1 "GND" H 1405 1927 50  0000 C CNN
 F 2 "" H 1400 2100 50  0001 C CNN
 F 3 "" H 1400 2100 50  0001 C CNN
