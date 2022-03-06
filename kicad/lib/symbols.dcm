@@ -36,4 +36,10 @@ K AVR 8bit Microcontroller tinyAVR
 F http://ww1.microchip.com/downloads/en/DeviceDoc/40001913A.pdf
 $ENDCMP
 #
+$CMP USB_C_Receptacle_USB2.0_shield
+D USB 2.0-only Type-C Receptacle connector
+K usb universal serial bus type-C USB2.0
+F https://www.usb.org/sites/default/files/documents/usb_type-c.zip
+$ENDCMP
+#
 #End Doc Library
