@@ -238,9 +238,9 @@ Wire Wire Line
 	2350 5900 2450 5900
 Wire Wire Line
 	2350 6000 2450 6000
-Text Label 2450 5900 0    50   ~ 0
-OutDigit1
 Text Label 2450 6000 0    50   ~ 0
+OutDigit1
+Text Label 2450 5900 0    50   ~ 0
 OutDigit2
 Wire Wire Line
 	2350 6100 2450 6100

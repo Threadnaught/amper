@@ -1,4 +1,4 @@
-16953935882649923
+16955582399158923
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75329,6 +75329,13 @@ svg2mod
 amper
 LargeB
 Imported from inkscape/footprints/LargeB.svg.broken
+svg2mod
+0
+0
+0
+amper
+LargeOutput
+Imported from inkscape/footprints/LargeOutput.svg.broken
 svg2mod
 0
 0

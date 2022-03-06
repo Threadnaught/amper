@@ -366,9 +366,9 @@ Connection ~ 3100 4500
 Wire Wire Line
 	3100 4500 2800 4500
 Text Label 3300 5100 0    50   ~ 0
-Tm1636Dio
+Tm1637Dio
 Text Label 3300 5000 0    50   ~ 0
-Tm1636Clk
+Tm1637Clk
 $Comp
 L Device:C C3
 U 1 1 61E5B1D0
