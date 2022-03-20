@@ -1,4 +1,4 @@
-default: bin/TM1637.hex
+default: bin/updown.hex
 
 bin/%.hex: %.c
 	avr-gcc -mmcu=attiny1606 -o bin/$<.bin $< -O3
