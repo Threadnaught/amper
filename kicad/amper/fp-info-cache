@@ -1,4 +1,4 @@
-16957229111541923
+16958876055266923
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75354,6 +75354,13 @@ svg2mod
 0
 3
 3
+amper
+PinSocket_1x09_P2.54mm_Vertical_no_silk
+Through hole straight socket strip, 1x09, 2.54mm pitch, single row (from Kicad 4.0.7), script generated
+Through hole socket strip THT 1x09 2.54mm single row
+0
+9
+9
 amper
 SLS0392FB4A1GD
 
