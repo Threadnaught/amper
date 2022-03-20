@@ -1,0 +1,5 @@
+ - https://github.com/ElTangas/jtag2updi
+ - AVR-GCC
+ - http://packs.download.atmel.com/ grab `Atmel ATtiny Series Device Support (1.10.348)`
+ - Follow this tutorial http://leonerds-code.blogspot.com/2020/11/building-for-new-atmega-0-series-chips.html
+ - MAY ALSO HAVE TO DO THE `/usr/avr/include/avr/io.h` STEP FROM THIS ONE https://gist.github.com/goncalor/51e1c8038cc058b4379552477255b4e1
