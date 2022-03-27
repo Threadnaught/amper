@@ -1,4 +1,4 @@
-default: bin/pwm.hex
+default: bin/updown.hex constants.h chars.h
 
 bin/%.hex: %.c
 	avr-gcc -mmcu=attiny1606 -o bin/$<.bin $< -O3
