@@ -1804,7 +1804,7 @@ U 1 1 634F05AF
 P 8000 1800
 F 0 "J8" H 8000 1150 50  0000 C CNN
 F 1 "Conn_01x09" H 8000 1250 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 8000 1800 50  0001 C CNN
+F 2 "amper:PinSocket_1x09_P2.54mm_Vertical_no_silk" H 8000 1800 50  0001 C CNN
 F 3 "~" H 8000 1800 50  0001 C CNN
 	1    8000 1800
 	-1   0    0    1   
@@ -1831,12 +1831,12 @@ $Comp
 L Connector_Generic:Conn_01x09 J9
 U 1 1 635FB8AF
 P 10600 1800
-F 0 "J9" H 10600 2450 50  0000 C CNN
-F 1 "Conn_01x09" H 10600 2350 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 10600 1800 50  0001 C CNN
+F 0 "J9" H 10600 1150 50  0000 C CNN
+F 1 "Conn_01x09" H 10600 1250 50  0000 C CNN
+F 2 "amper:PinSocket_1x09_P2.54mm_Vertical_no_silk" H 10600 1800 50  0001 C CNN
 F 3 "~" H 10600 1800 50  0001 C CNN
 	1    10600 1800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	8200 2200 8700 2200
