@@ -300,7 +300,7 @@ AtProg
 Text Label 9300 1500 0    50   ~ 0
 SourceAAdc
 Text Label 9300 1400 0    50   ~ 0
-SourceBOut
+SourceBAdc
 Text Label 9300 1300 0    50   ~ 0
 SourceAPwm
 Text Label 8000 1300 2    50   ~ 0
@@ -448,7 +448,7 @@ SourceAOut
 Text Label 10550 3300 2    50   ~ 0
 SourceBOut
 Text Label 10550 3400 2    50   ~ 0
-ResultAdc
+ResultOut
 Wire Wire Line
 	10550 3200 10650 3200
 Wire Wire Line
@@ -1117,7 +1117,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 3600 5850 3600
 Text Label 5800 3600 2    50   ~ 0
-ResultAdc
+ResultOut
 Text Label 5800 3500 2    50   ~ 0
 SourceBOut
 $Comp
@@ -1854,4 +1854,8 @@ F 3 "~" H 5600 2100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5600 2000 5600 2100
+Text Label 5700 1200 0    50   ~ 0
+ResultOut
+Wire Wire Line
+	5600 1200 5700 1200
 $EndSCHEMATC
