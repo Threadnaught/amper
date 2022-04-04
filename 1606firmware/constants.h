@@ -21,7 +21,7 @@ struct reg{
 #define TM1637_DATA	0x40
 #define TM1637_ADDRESS	0xC0
 #define TM1637_DISPLAY	0x80
-#define TM1637_CLOCK_US 10 //100 is a safe value
+#define TM1637_CLOCK_US 1 //10 is a safe value
 #define TM1637_BRIGHTNESS 0x00 //0x00 - 0x0f
 #define TM1637_CLK PIN4
 #define TM1637_DIO PIN5
@@ -36,12 +36,10 @@ const unsigned char segmentOrder[6] PROGMEM = {2,3,5,4,1,0};
 // ~= (measured value << 5) / 0x02F9
 #define ADC_CONVERSION_CONSTANT 0x02F9
 
-#define DEBOUNCE_CYCLES 75
-
 #define MAX_V 43
 #define MIN_V 0
-#define pwmShift 5
-#define pwmMax 127 << pwmShift
+#define pwmShift 10
+#define pwmMax ((int32_t)127) <<pwmShift
 
 //util funcs:
 #define MAX(a,b) (a>b)?a:b

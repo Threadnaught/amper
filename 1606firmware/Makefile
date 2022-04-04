@@ -1,6 +1,6 @@
-default: bin/updown.hex constants.h chars.h
+default: bin/updown.hex 
 
-bin/%.hex: %.c
+bin/%.hex: %.c constants.h chars.h
 	avr-gcc -mmcu=attiny1606 -o bin/$<.bin $< -O3
 	 
 	avr-objcopy -j .text -j .data -O ihex bin/$<.bin $@

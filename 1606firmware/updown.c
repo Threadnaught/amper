@@ -34,10 +34,18 @@ inline void uartPutHexByte(unsigned char val){
 	}
 }
 
-inline void uartPutHexInt(unsigned long val, int bytes){
+inline void uartPutHexUInt(unsigned long val, int32_t bytes){
 	unsigned char* cast = (unsigned char*)&val;
-	for(int i = bytes-1; i >= 0; i--)
+	for(int32_t i = bytes-1; i >= 0; i--)
 		uartPutHexByte(cast[i]);
+}
+
+inline void uartPutHexInt(long val, int32_t bytes){
+	if(val < 0){
+		uartPutChar('-');
+		val = -val;
+	}
+	uartPutHexUInt(val, bytes);
 }
 
 //Set the pinmode of TM1637_CLK and TM1637_DIO
@@ -89,7 +97,7 @@ void sendSegs(const unsigned char* segs){
 	});
 }
 
-void intToTwoSegs(int i, unsigned char* segs, int tenths){
+void intToTwoSegs(int32_t i, unsigned char* segs, int32_t tenths){
 	segs[1] 
 		= pgm_read_byte(chars +'0' + (i%10));
 	i /= 10;
@@ -98,18 +106,13 @@ void intToTwoSegs(int i, unsigned char* segs, int tenths){
 		| (tenths ? pgm_read_byte(chars +'.') : 0);
 }
 
-inline void handleButtons(int i, unsigned char up_mask, unsigned char down_mask, unsigned char* debounceInputs, unsigned char* voltages){
-	if((PORTC_IN & up_mask) && (debounceInputs[i] == 0)){
+inline void handleButtons(int32_t i, unsigned char up_mask, unsigned char down_mask, unsigned char* voltages){
+	if(PORTC_IN & up_mask){
 		voltages[i] = MIN(MAX_V, voltages[i]+1);
-		debounceInputs[i]=DEBOUNCE_CYCLES;
 	}
-
-	if((PORTC_IN & down_mask) && (debounceInputs[i] == 0)){
+	if(PORTC_IN & down_mask){
 		voltages[i] = MAX(0, voltages[i]-1);
-		debounceInputs[i]=DEBOUNCE_CYCLES;
 	}
-
-	debounceInputs[i] = MAX(0, debounceInputs[i]-1);
 }
 
 inline unsigned short adcRawCounts(unsigned char muxpos){
@@ -119,7 +122,7 @@ inline unsigned short adcRawCounts(unsigned char muxpos){
 
 	while(ADC0_COMMAND);
 
-	// uartPutProgmemStr(PSTR("ADC Result:")); uartPutHexInt(ADC0_RES, 2); uartPutChar('\n');
+	// uartPutProgmemStr(PSTR("ADC Result:")); uartPutHexUInt(ADC0_RES, 2); uartPutChar('\n');
 	return MIN(ADC0_RES, 0x03FF);
 }
 
@@ -172,59 +175,90 @@ void main(){
 
 	uartPutProgmemStr(PSTR("Set up regs\n"));
 
-	unsigned char voltages[] = { 10, 10, 10 };
-	unsigned char debounceInputs[] = { 0, 0 }; //could have one global debounce
-	short pwmOutputs[] = {pwmMax, pwmMax};
-	unsigned char segments[6];
-
-	int loops = 0;
-
-	//Turn display on and set TM1637_BRIGHTNESS
-	Tm1637Set(1,1);
-	txn({
-		sendByte(TM1637_DATA);
-	});
-	txn({
-		sendByte( TM1637_DISPLAY				//command
-				| 0x08						//display is on
-				| (TM1637_BRIGHTNESS & 0x07)); 	//set TM1637_BRIGHTNESS
-	});
-
+	int32_t sourceATargetTenths = 30;
+	int32_t sourceAPwm = pwmMax;
+	TCA0_SPLIT_HCMP0 = sourceAPwm >> pwmShift;
+	// TCA0_SPLIT_LCMP0 = 0;
+	
+	
 	while(1){
-		// int counts = adcRawCounts(SOURCE_B_OUT_ADC);
+		int32_t sourceATargetRaw = tenthsVoltRawCount(sourceATargetTenths);
+		int32_t sourceAAdc = adcRawCounts(SOURCE_A_OUT_ADC);
+
+		int32_t error = sourceAAdc - sourceATargetRaw;
 		
-		for(int i = 0; i < 3; i++){
-			intToTwoSegs(voltages[i], segments + (i*2), 1);
-		}
-
-		handleButtons(0, PIN0_bm, PIN1_bm, debounceInputs, voltages);
-		handleButtons(1, PIN2_bm, PIN3_bm, debounceInputs, voltages);
-
-		// int target = tenthsVoltRawCount(voltages[1]);
-
-		// //ran into annoying bug with integer underflowing:
-		// if(counts > target && pwmOutputs[1] < 127<<5){
-		// 	pwmOutputs[1]++;
-		// } else if (counts < target && pwmOutputs[1] > 0) {
-		// 	pwmOutputs[1]--;
+		// if(error > 0){
+		// 	uartPutProgmemStr(PSTR("Too high\n"));
+		// } else if (error < 0){
+		// 	uartPutProgmemStr(PSTR("Too low\n"));
 		// }
 
-		if((loops++) % 100 == 0) {
-			voltages[2] = adcTenthsVolt(adcRawCounts(RESULT_ADC));
+		
+		// uartPutProgmemStr(PSTR("\nerror:")); uartPutHexInt(error, 4); uartPutProgmemStr(PSTR("\n"));
 
-			// uartPutProgmemStr(PSTR("Counts:")); uartPutHexInt(counts, 4); uartPutChar('\n');
-			// uartPutProgmemStr(PSTR("Target:")); uartPutHexInt(target, 4); uartPutChar('\n');
-			// uartPutProgmemStr(PSTR("PWM:")); uartPutHexInt(pwmOutputs[1], 4); uartPutChar('\n');
+		sourceAPwm += error;
+		// uartPutProgmemStr(PSTR("sourceAPwm:")); uartPutHexInt(sourceAPwm, 4); uartPutProgmemStr(PSTR("\n"));
+		
+		if(sourceAPwm < 0)
+			sourceAPwm = 0;
+		if(sourceAPwm > pwmMax)
+			sourceAPwm = pwmMax;
+		
+		// uartPutProgmemStr(PSTR("sourceAPwm:")); uartPutHexInt(sourceAPwm, 4); uartPutProgmemStr(PSTR("\n"));
+		TCA0_SPLIT_HCMP0 = sourceAPwm >> pwmShift;
 
-			// uartPutChar('\n');
-		}
-
-		handlePwm(&voltages[0], &pwmOutputs[0], SOURCE_A_OUT_ADC);
-		handlePwm(&voltages[1], &pwmOutputs[1], SOURCE_B_OUT_ADC);
-		TCA0_SPLIT_HCMP0 = pwmOutputs[0]>>pwmShift;
-		TCA0_SPLIT_LCMP0 = pwmOutputs[1]>>pwmShift;
-
-		sendSegs(segments);
-		// _delay_ms(25);
+		// _delay_ms(100);
 	}
+
+	// while(1){
+	// 	uartPutProgmemStr(PSTR("Asdf\n"));
+	// 	_delay_ms(25);
+	// }
+
+	// unsigned char voltages[] = { 10, 10, 10 };
+	// short pwmOutputs[] = {pwmMax, pwmMax};
+	// unsigned char segments[6];
+
+	// int32_t loops = 0;
+
+	// //Turn display on and set TM1637_BRIGHTNESS
+	// Tm1637Set(1,1);
+	// txn({
+	// 	sendByte(TM1637_DATA);
+	// });
+	// txn({
+	// 	sendByte( TM1637_DISPLAY				//command
+	// 			| 0x08						//display is on
+	// 			| (TM1637_BRIGHTNESS & 0x07)); 	//set TM1637_BRIGHTNESS
+	// });
+
+	// while(1){
+	// 	// int32_t counts = adcRawCounts(SOURCE_B_OUT_ADC);
+		
+	// 	for(int32_t i = 0; i < 3; i++){
+	// 		intToTwoSegs(voltages[i], segments + (i*2), 1);
+	// 	}
+
+
+	// 	if((loops++) % 300 == 0) {
+
+	// 		handleButtons(0, PIN0_bm, PIN1_bm, voltages);
+	// 		handleButtons(1, PIN2_bm, PIN3_bm, voltages);
+	// 		voltages[2] = adcTenthsVolt(adcRawCounts(RESULT_ADC));
+	// 		sendSegs(segments);
+
+	// 		// uartPutProgmemStr(PSTR("Counts:")); uartPutHexUInt(counts, 4); uartPutChar('\n');
+	// 		// uartPutProgmemStr(PSTR("Target:")); uartPutHexUInt(target, 4); uartPutChar('\n');
+	// 		// uartPutProgmemStr(PSTR("PWM:")); uartPutHexUInt(pwmOutputs[1], 4); uartPutChar('\n');
+
+	// 		// uartPutChar('\n');
+	// 	}
+
+	// 	handlePwm(&voltages[0], &pwmOutputs[0], SOURCE_A_OUT_ADC);
+	// 	handlePwm(&voltages[1], &pwmOutputs[1], SOURCE_B_OUT_ADC);
+	// 	TCA0_SPLIT_HCMP0 = pwmOutputs[0]>>pwmShift;
+	// 	TCA0_SPLIT_LCMP0 = pwmOutputs[1]>>pwmShift;
+		
+	// 	// _delay_ms(25);
+	// }
 }
