@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/idk/git/amper/kicad/amper/amper.sch)
-    (date "Fri 08 Apr 2022 00:51:37 BST")
+    (date "Fri 08 Apr 2022 00:54:04 BST")
     (tool "Eeschema 5.1.5+dfsg1-2build2")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -524,7 +524,7 @@
       (tstamp 632A6DD9))
     (comp (ref SW5)
       (value SW_Push)
-      (footprint amper:UpSwitch)
+      (footprint amper:K2-1157SP-I4SW-01)
       (datasheet ~)
       (fields
         (field (name Part) C2909692)
