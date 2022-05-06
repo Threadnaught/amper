@@ -67,8 +67,6 @@ void initTm1637(){
 	sendSegsTm1637(segs);
 }
 
-
-
 void intToTwoSegs(int i, unsigned char* segs, int tenths){
 	segs[1] 
 		= pgm_read_byte(chars +'0' + (i%10));

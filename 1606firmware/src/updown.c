@@ -2,6 +2,7 @@
 #include "regs.h"
 
 void initRegs(){
+	_PROTECTED_WRITE(CLKCTRL.MCLKCTRLB, 0);
 	const struct reg* r = regs;
 	while(1){
 		struct reg cur;
@@ -23,32 +24,48 @@ void initRegs(){
 	}
 }
 
-volatile int pwmval = 64;
 volatile int vector_count = 0;
+volatile int voltage_target = 15;
+volatile short railAState = pwmMax;
 
 ISR(TCA0_HUNF_vect){
-	if(vector_count++ < (1<<11)){
+	if(vector_count++ < (1<<4)){
 		TCA0_SPLIT_INTFLAGS = TCA_SPLIT_HUNF_bm;
 		return;
 	}
 	vector_count = 0;
-	pwmval = (pwmval+1)%100;
+
+	// short targetCounts = tenthsVoltRawCount(voltage_target);
+	// short currentCounts = adcRawCounts(SOURCE_A_OUT_ADC);
+	// short error = targetCounts - currentCounts;
+	// error >>= 4;
+	// pwmValueA -= error;
+	// if(pwmValueA < 0) pwmValueA = 0;
+	// if(pwmValueA > pwmMax) pwmValueA = pwmMax;
+	// TCA0_SPLIT_HCMP0 = pwmValueA>>pwmShift;
+
+	handleRail(voltage_target, &railAState, SOURCE_A_OUT_ADC, &TCA0_SPLIT_HCMP0);
+	
+
 	TCA0_SPLIT_INTFLAGS = TCA_SPLIT_HUNF_bm;
 }
 
 void main(){
-	_PROTECTED_WRITE(CLKCTRL.MCLKCTRLB, 0);
 	initRegs();
 	initTm1637();
-
 	sei();
+
+	// uartPutProgmemStr(PSTR("pwm value (post clamp):")); uartPutHexInt(pwmValueA,2); uartPutChar('\n');
+
+	uartPutProgmemStr(PSTR("started\n"));
 
 	unsigned char segs[] = {0x00,0x00,0x00,0x00,0x00,0x00};
 	while(1){
 		ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
-			intToTwoSegs(pwmval, segs, 0);
-			sendSegsTm1637(segs);
+			intToTwoSegs(adcTenthsVolt(adcRawCounts(SOURCE_A_OUT_ADC)), segs, 1);
+			uartPutProgmemStr(PSTR("pwm value:")); uartPutHexInt(railAState,2); uartPutChar('\n');
 		}
+		sendSegsTm1637(segs);
 		_delay_ms(1);
 	}
 }
